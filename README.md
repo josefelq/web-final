@@ -30,5 +30,6 @@ export TWITTER_ACCESS_TOKEN_SECRET="yourCredentialsHere"
 meteor npm install
 meteor
 ```
+After it has been deployed: go to localhost:3000, click on the Query input and then press Enter.
 
 
