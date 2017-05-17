@@ -6,7 +6,7 @@ The objective of the exam was to build a geographic locator of tweets using mete
 ## How was it made?
 Using the two repositories the teacher kindly gave us (https://github.com/john-guerra/ColombiaVisualizationReact and https://github.com/john-guerra/twitterStreamerMeteor) I started modifying the twitter streamer app like so:
 - Added ColombiaMap component, this included creating a public folder (from which static files are served to the client) and adding the corresponding json files for the map.
-- Modified the twitter api calls so that only tweets that had the geo property were added to the meteor collection.
+- Modified the twitter api calls so that only tweets that had the geo property were added to the meteor collection. Also, limit is now 20000 instead of 10.
 - Created the Overlay component that draws for each tweet a dot on the canvas.
 - Finally, in each component I created new methods that used props so that the Map Component (child component of App) could share the projection function with the Overlay Component (another child component).
 - The final touches: modifying css so that the overlay now is rendered behind the canvas in the same position.
