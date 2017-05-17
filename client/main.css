@@ -1,1 +1,15 @@
 /* CSS declarations go here */
+canvas {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.colombiaMap{
+  position: absolute;
+  margin: 0 auto;
+}
+
+.typehere{
+  position:relative;
+}

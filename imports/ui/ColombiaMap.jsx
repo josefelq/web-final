@@ -19,7 +19,7 @@ export default class ColombiaMap extends Component {
 		    centered;
 
 		// Define color scale
-		var color = d3.scaleLinear()
+		var color = d3.scale.linear()
 		  .domain([1, 20])
 		  .clamp(true)
 		  .range(['#fff', '#409A99']);
@@ -29,6 +29,8 @@ export default class ColombiaMap extends Component {
 		  // Center the Map in Colombia
 		  .center([-74, 4.5])
 		  .translate([width / 2, height / 2]);
+
+			this.props.setProjection(this.projection);
 
 		var path = d3.geo.path()
 		  .projection(this.projection);
