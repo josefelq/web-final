@@ -32,4 +32,7 @@ meteor
 ```
 After it has been deployed: go to localhost:3000, click on the Query input and then press Enter.
 
+## Screenshot
+
+![Screenshot](http://i.imgur.com/MrnMFWE.png "Screenshot")
 
