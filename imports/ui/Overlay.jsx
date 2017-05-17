@@ -43,9 +43,7 @@ export default class Overlay extends Component {
 
   render(){
     return (
-           <canvas
-           ref={(canvas) => {this.canvas = canvas}}
-           width="600" height="600"></canvas>
+           <canvas ref={(canvas) => {this.canvas = canvas}} width="600" height="600"></canvas>
        );
   }
 
